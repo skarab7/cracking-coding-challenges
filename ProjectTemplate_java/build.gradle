@@ -1,6 +1,10 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
+/* apply plugin: 'pmd'
+apply plugin: 'checkstyle'
+apply plugin: 'findbugs' */
+
 sourceSets {
 	main {
 		java {
@@ -24,7 +28,6 @@ sourceSets {
 	
 }
 
-
 dependencies {
 	testCompile group: 'junit', name:'junit', version: '4.10'
 }
@@ -32,3 +35,15 @@ dependencies {
 repositories {
       mavenCentral()
 }
+
+/*
+checkstyle {
+  toolVersion = '7.6'
+}
+
+tasks.withType(Checkstyle) {
+  reports {
+    html.destination rootProject.file("build/reports/checkstyle.html")
+  }
+}
+*/

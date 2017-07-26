@@ -1,0 +1,6 @@
+mock
+pytest
+pytest-cov
+pytest-timeout
+pytest-watch
+flake8
